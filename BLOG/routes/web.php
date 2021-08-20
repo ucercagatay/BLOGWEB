@@ -21,4 +21,5 @@ Route::get('/anasayfa',[Controllers\Anasayfa::class,'anasayfa']);
 Route::get('/giris',[Controllers\Giris::class,'giris']) ->name('giris');
 Route::get('/feedback',[Controllers\FeedBack::class,'feedback'])->name('feedback');
 Route::get('/adminlog',[Controllers\admin::class,'adminlog'])->name('adminlog');
+Route::get('/adminpanel',[Controllers\admin::class,'adminpanel'])->name('adminpanel');
 Route::post('/feedback/post',[Controllers\FeedBack::class,'postFeedback'])->name('post-feedback');
