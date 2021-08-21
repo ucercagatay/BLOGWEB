@@ -4,17 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
 
-class Role extends Model
+class Feedback extends Model
 {
-    use HasFactory,Notifiable;
+    use HasFactory;
 
-    protected $table='roles';
+    protected $table=('feedbacks');
     protected $guarded=['id'];
 
+
     public function getUser(){
-        return $this->hasMany('App\Models\User','role_id','id');
+        return $this->hasOne('App\Models\User','user_id','id');
     }
+
 
 }

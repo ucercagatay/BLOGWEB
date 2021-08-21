@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -22,7 +21,9 @@ class User extends Authenticatable
     public function getRole(){
     return $this->hasOne('App\Models\Role','role_id','id');
     }
-
+    public function getFeedback(){
+        return $this->hasMany('App\Models\Feedback','user_id','id');
+    }
 
 
     protected $casts = [

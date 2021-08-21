@@ -13,6 +13,14 @@
     <div class=" text-center mt-5 ">
         <h1>Ziyaretçi Geri Bildirim Formu</h1>
     </div>
+    <div style="background-color: yellow" id="error_div">
+        @foreach($errors->all() as $error)
+
+            <li>{{$error}}</li>
+
+
+        @endforeach
+    </div>
     <div class="row ">
         <div class="col-lg-7 mx-auto">
             <div class="card mt-2 mx-auto p-4 bg-light">
@@ -23,7 +31,8 @@
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="form-group"> <label for="form_name">İsminiz <a style="color: red">*</a> </label><input id="form_name" type="text" name="name" class="form-control" placeholder="Lütfen Adınızı Giriniz" required="required" data-error="Lütfen İsminizi Giriniz!"> </div>
+                                        <div class="form-group"> <label for="form_name">İsminiz <a style="color: red">*</a> </label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Lütfen Adınızı Giriniz" required="required" data-error="Lütfen İsminizi Giriniz!"> </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group"> <label for="form_lastname">Soyisminiz <a style="color: red">*</a></label>

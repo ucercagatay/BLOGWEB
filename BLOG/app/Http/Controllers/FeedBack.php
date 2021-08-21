@@ -11,12 +11,21 @@ class FeedBack extends Controller
     }
 
     public function postFeedback(Request $request){
-         $datas=$request->all();
-        echo ('Geri bildiriminiz alınmıştır'),'<br>', 'style="color:red"; ','<br>';
-         foreach($datas as $data){
-           echo $data , '<br>';
-         }
-
-
+        //return $request->post();
+        //return $request->all();
+        //validator zor olan validasyon şekl dhaa profesyonel
+        //basit olan validasyon yöntemi
+        /*$request->validate([
+            'ad' => 'required|min:3',
+            'mail' => 'required|email',
+            'sifre' => 'required|min:6|confirmed'
+        ]);*/
+           return $request->validate([
+               'name' => 'required|min:3',
+               'surname' => 'required|',
+               'need'=>'required',
+               'mail' => 'required|email',
+               'message' => 'required|min:3|max:240',
+           ]);
     }
 }
