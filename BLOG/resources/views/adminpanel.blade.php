@@ -45,7 +45,7 @@
                     <div class="sb-sidenav-menu-heading">Sayfalar</div>
                     <a class="nav-link" href="">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                      Ana Ekran
+                        Ana Ekran
                     </a>
                     <div class="sb-sidenav-menu-heading">Kontroller</div>
                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
@@ -58,11 +58,11 @@
                             <a class="nav-link" href="">FeedBack</a>
                         </nav>
                     </div>
-                   <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                        <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                        Pages
-                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                    </a>-->
+                    <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                         <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                         Pages
+                         <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                     </a>-->
                     <div class="sb-sidenav-menu-heading">Düzenlemeler</div>
                     <a class="nav-link" href="">
                         <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
@@ -72,29 +72,23 @@
             </div>
             <div class="sb-sidenav-footer">
                 <div class="small">Giris Yapan Kullanıcı:</div>
-               Bura Databaseden çekilicek
+                Bura Databaseden çekilicek
             </div>
         </nav>
     </div>
-    <div id="layoutSidenav_content">
-
-        <footer class="py-4 bg-light mt-auto">
-            <div class="container-fluid px-4">
-                <div class="d-flex align-items-center justify-content-between small">
-                    <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                    <div>
-                        <a href="#">Privacy Policy</a>
-                        &middot;
-                        <a href="#">Terms &amp; Conditions</a>
-                    </div>
-                </div>
+</div>
+<footer class="py-4 bg-light mt-auto">
+    <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between small">
+            <div class="text-muted">Copyright &copy; Your Website 2021</div>
+            <div>
+                <a href="#">Privacy Policy</a>
+                &middot;
+                <a href="#">Terms &amp; Conditions</a>
             </div>
-        </footer>
+        </div>
     </div>
-</div>  <a class="small text-white stretched-link" href="#">View Details</a>
-
-
-
+</footer>
 <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')}}" crossorigin="anonymous"></script>
 <script src="{{asset('admin/adminpanel/js/scripts.js')}}"></script>
 <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js')}}" crossorigin="anonymous"></script>
@@ -103,5 +97,4 @@
 <script src="{{asset('https://cdn.jsdelivr.net/npm/simple-datatables@latest')}}" crossorigin="anonymous"></script>
 <script src="{{asset(('admin/adminpanel/js/datatables-simple-demo.js'))}}"></script>
 </body>
-
 </html>

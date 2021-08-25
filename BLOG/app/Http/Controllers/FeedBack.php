@@ -3,23 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 
 class FeedBack extends Controller
 {
     public function Feedback(){
         return view('FeedBack');
     }
+        public function CreateFeedback(Request $request){
+       /*  $name = $request->input('name');
+         $surname = $request->input('surname');
+         $email = $request->input('email');
+         $need = $request->input('need');
+         $message = $request->input('message');
+         $feedback=DB::table('feedbacks');
+         $feedback->insert([$name,$surname,$email,$need,$message]);
+          return redirect()->route('/feedback')->with('Feedback gönderildi');*/
+            DB::table('feedbacks')->insert([
+                'name'=>$request->input('name'),
+                'surname'=>$request->input('surname'),
+                'email'=>$request->input('email'),
+                'need'=>$request->input('need'),
+                'message'=>$request->input('message'),
+            ]);
 
+            return redirect()->route('feedback');
+
+
+
+
+        }
     public function postFeedback(Request $request){
-        //return $request->post();
-        //return $request->all();
-        //validator zor olan validasyon şekl dhaa profesyonel
-        //basit olan validasyon yöntemi
-        /*$request->validate([
-            'ad' => 'required|min:3',
-            'mail' => 'required|email',
-            'sifre' => 'required|min:6|confirmed'
-        ]);*/
            return $request->validate([
                'name' => 'required|min:3',
                'surname' => 'required|',

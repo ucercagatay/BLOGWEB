@@ -28,11 +28,19 @@ class UserSeeder extends Seeder
              'surname'=> "Üçer",
               'email'=> "cagataygia@gmail.com",
               'password'=> Hash::make('123456'),
-            'created_at'=>now(),
+            'created_at'=>date('2021-08-19 10:49:06'),
             'updated_at'=>now(),
             'role_id'=>1,
         ]);
-
+        DB::table('users')->insert([
+            'name'=> "Okan",
+            'surname'=> "Ekinci",
+            'email'=> "deneme@gmail.com",
+            'password'=> Hash::make('102030'),
+            'created_at'=>now(),
+            'updated_at'=>now(),
+            'role_id'=>2,
+        ]);
 
 
 

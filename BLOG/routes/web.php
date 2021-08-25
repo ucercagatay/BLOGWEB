@@ -20,6 +20,8 @@ Route::get('/',function (){
 Route::get('/anasayfa',[Controllers\Anasayfa::class,'anasayfa']);
 Route::get('/giris',[Controllers\Giris::class,'giris']) ->name('giris');
 Route::get('/feedback',[Controllers\FeedBack::class,'feedback'])->name('feedback');
+Route::post('/feedback',[Controllers\Feedback::class,'CreateFeedback'])->name('feedback-post');
 Route::get('/adminlog',[Controllers\admin::class,'adminlog'])->name('adminlog');
+Route::post('/adminlog',[Controllers\admin::class,'adminPass'])->name('adminPass');
 Route::get('/adminpanel',[Controllers\admin::class,'adminpanel'])->name('adminpanel');
-Route::post('/feedback/post',[Controllers\FeedBack::class,'postFeedback'])->name('post-feedback');
+

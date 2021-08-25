@@ -26,7 +26,7 @@
             <div class="card mt-2 mx-auto p-4 bg-light">
                 <div class="card-body bg-light">
                     <div class="container">
-                        <form id="contact-form" role="form" method="post" action="{{route('post-feedback')}}">
+                        <form id="contact-form" role="form" method="post" action="{{route('feedback-post')}}">
                             @csrf
                             <div class="controls">
                                 <div class="row">

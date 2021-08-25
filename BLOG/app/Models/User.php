@@ -12,14 +12,9 @@ class User extends Authenticatable
     protected $table='users';
     protected $guarded =['id'];
     protected $hidden=['password'];
-    protected $fillable=[
-        'name',
-        'surname',
-        'email',
-    ];
 
     public function getRole(){
-    return $this->hasOne('App\Models\Role','role_id','id');
+    return $this->belongsTo('App\Models\Role','role_id','id');
     }
     public function getFeedback(){
         return $this->hasMany('App\Models\Feedback','user_id','id');

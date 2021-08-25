@@ -22,7 +22,7 @@ class CreateMessagesTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('feedback_id')->references('id')->on('feedback');
+            $table->foreign('feedback_id')->references('id')->on('feedbacks');
         });
     }
 
