@@ -58,9 +58,11 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group"> <label for="form_message">Mesajınız <a style="color: red">*</a></label>
-                                            <textarea id="form_message" name="message" class="form-control" placeholder="Lütfen Mesajınızı Giriniz" rows="4" required="required" data-error="Mesaj Alanı boş bırakılamaz"></textarea> </div>
+                                            <textarea  style="resize: none"  id="form_message" name="message" class="form-control" placeholder="Lütfen Mesajınızı Giriniz" rows="4" required="required" data-error="Mesaj Alanı boş bırakılamaz"></textarea> </div>
                                     </div>
-                                    <div class="col-md-12"> <input type="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send pt-2 btn-block p-l-2 " value="Geri Bildirimi Gönder">
+                                    </div>
                                 </div>
                             </div>
                         </form>

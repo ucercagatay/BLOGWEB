@@ -22,7 +22,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">ANASAYFA</a>
                 </li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="{{route('giris')}}">HAKKINDA</a>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">HAKKINDA</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" target="_blank" href="{{route('feedback')}}">GERİ BİLDİRİM</a>
                 </li>
@@ -42,7 +42,7 @@
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <p class="pre-wrap masthead-subheading font-weight-light mb-0">12.07.2001 dogumlu Fırat Üniversitesi Yazılım Mühendisligi 3.Sınıf ögrencisiyim.
+        <p  class="pre-wrap masthead-subheading font-weight-light mb-0">12.07.2001 dogumlu Fırat Üniversitesi Yazılım Mühendisligi 3.Sınıf ögrencisiyim.
             Istanbulda yasamaktayım.</p>
     </div>
 </header>

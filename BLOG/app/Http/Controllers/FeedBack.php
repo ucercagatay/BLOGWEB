@@ -12,14 +12,6 @@ class FeedBack extends Controller
         return view('FeedBack');
     }
         public function CreateFeedback(Request $request){
-       /*  $name = $request->input('name');
-         $surname = $request->input('surname');
-         $email = $request->input('email');
-         $need = $request->input('need');
-         $message = $request->input('message');
-         $feedback=DB::table('feedbacks');
-         $feedback->insert([$name,$surname,$email,$need,$message]);
-          return redirect()->route('/feedback')->with('Feedback gönderildi');*/
             DB::table('feedbacks')->insert([
                 'name'=>$request->input('name'),
                 'surname'=>$request->input('surname'),

@@ -12,14 +12,6 @@ class admin extends Controller
     public function adminlog(){
         return view('adminlog');
     }
-       /*public function adminPass(Request $request){
-        if (Auth::attempt(['role_id'=>$request->role_id,'email'=>$request->email,'password'=>$request->password,])){
-
-        return redirect()->route('adminpanel');
-        }
-          return redirect()->route('adminlog')->withErrors('E mail adresi veya şifre hatalı');
-
-       }*/
       public function adminPass(Request $request){
 
           $is_admin=Role::find(User::where('email',$request->email)->first()->role_id)->role_name;
