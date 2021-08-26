@@ -58,6 +58,14 @@
                         </table>
                     </div>
                 </div>
+                <div class="alert alert-danger" role="alert" id="error_div">
+                    @foreach($errors->all() as $error)
+
+                        <li>{{$error}}</li>
+
+
+                    @endforeach
+                </div>
             </div>
         </main>
         <footer class="py-4 bg-light mt-auto">

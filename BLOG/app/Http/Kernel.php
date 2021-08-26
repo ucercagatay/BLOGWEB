@@ -64,5 +64,6 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'wordFilter'=>   \App\Http\Middleware\wordFilter::class,
         'isAdmin'=>\App\Http\Middleware\isAdmin::class,
+        'isLogin'=>\App\Http\Middleware\isLogin::class,
     ];
 }

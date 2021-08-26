@@ -18,7 +18,7 @@ Route::get('/',[Controllers\Anasayfa::class,'anasayfa']);
 Route::get('/anasayfa',[Controllers\Anasayfa::class,'anasayfa']);
 Route::get('/feedback',[Controllers\FeedBack::class,'feedback'])->name('feedback');
 Route::post('/feedback',[Controllers\Feedback::class,'CreateFeedback'])->middleware('wordFilter')->name('feedback-post');
-Route::get('/adminlog',[Controllers\admin::class,'adminlog'])->name('adminlog');
+Route::get('/adminlog',[Controllers\admin::class,'adminlog'])->middleware('isLogin')->name('adminlog');
 Route::post('/adminlog',[Controllers\admin::class,'adminPass'])->name('adminPass');
 Route::get('/adminpanel',[Controllers\admin::class,'adminpanel'])->middleware('isAdmin')->name('adminpanel');
 
