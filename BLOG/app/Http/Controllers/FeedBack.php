@@ -12,6 +12,7 @@ class FeedBack extends Controller
         return view('FeedBack');
     }
         public function CreateFeedback(Request $request){
+        //test
             DB::table('feedbacks')->insert([
                 'name'=>$request->input('name'),
                 'surname'=>$request->input('surname'),
